@@ -1,3 +1,6 @@
-{:paths ["src"]
- :deps {org.clojure/core.cache {:mvn/version "1.0.207"}
-        org.clojure/clojure {:mvn/version "1.10.1"}}}
+{:paths     ["src"]
+ :deps      {org.clojure/core.cache {:mvn/version "1.0.207"}
+             org.clojure/clojure    {:mvn/version "1.10.1"}
+             fundingcircle/jackdaw  {:mvn/version "0.7.6"}}
+ :mvn/repos {"confluent" {:url "http://packages.confluent.io/maven/"}}
+ :aliases   {:dev {:extra-paths ["dev"]}}}
